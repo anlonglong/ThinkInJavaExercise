@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 
 /**
- * @Description: ${DESCRIPTION}
+ * @Description: map集合数据的填充
  * @CreateDate: 2019/6/23 上午10:28
  * @Author: longlong.an
  * @Email: longlong.an.o@nio.com
