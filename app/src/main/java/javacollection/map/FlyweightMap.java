@@ -73,7 +73,6 @@ public class FlyweightMap extends AbstractMap<String, String> {
         private  class Iter implements Iterator<Map.Entry<String, String>> {
             private Entry mEntry = new Entry(-1);
 
-
             @Override
             public boolean hasNext() {
                 return mEntry.index < size - 1;
@@ -96,5 +95,14 @@ public class FlyweightMap extends AbstractMap<String, String> {
     @Override
     public Set<Map.Entry<String, String>> entrySet() {
         return new EntrySet(Countries.COUNTRIES.length);
+    }
+
+    static Map<String, String> select(final int size) {
+        return new FlyweightMap() {
+            @Override
+            public Set<Map.Entry<String, String>> entrySet() {
+                return new EntrySet(size);
+            }
+        };
     }
 }
