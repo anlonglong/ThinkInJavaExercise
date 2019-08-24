@@ -19,5 +19,5 @@ import java.lang.annotation.Target;
 public @interface BaseType {
     String listenerMethod() default "";
     Class<?> listenerType() default View.class;
-    String callback() default "onClick()";
+    String callback() default "onClick";
 }

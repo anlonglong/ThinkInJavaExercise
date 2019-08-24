@@ -34,7 +34,7 @@ public class DriverPositionActivity extends AppCompatActivity {
                     InjectUtils.injectOnClick(DriverPositionActivity.this);
                 }else {
                     frameLayout.setLayoutParams(new LinearLayout.LayoutParams(dip2px(v.getContext(), 96), dip2px(v.getContext(),96)));
-
+                    //InjectUtils.injectOnClick2(DriverPositionActivity.this);
                     FrameLayout.LayoutParams params = new FrameLayout.LayoutParams(dip2px(v
                             .getContext(), 40), dip2px(v.getContext(), 40));
                     params.gravity= Gravity.CENTER;

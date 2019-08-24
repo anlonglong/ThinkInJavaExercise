@@ -18,7 +18,7 @@ import java.lang.annotation.Target;
 @BaseType(
         listenerMethod = "setOnClickListener",
         listenerType = View.OnClickListener.class,
-        callback = "onClick()")
+        callback = "onClick")
 public @interface OnClick {
     int[] value();
 }
