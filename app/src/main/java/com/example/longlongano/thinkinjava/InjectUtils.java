@@ -71,7 +71,8 @@ public class InjectUtils {
                                                 @Override
                                                 public Object invoke(Object proxy, Method m, Object[]
                                                         args) throws Throwable {
-                                                    //这里答应log的时候，不要直接输出proxy这个参数，否则会出现oom。但是可以调用里面的一个参数。
+                                                    //这里打应log的时候，不要直接输出proxy这个参数，否则会出现oom。但是可以调用里面的一个参数。
+
                                                     Log.i(TAG, "method = [" + m
                                                             + "], args = [" + args + "]" + proxy.getClass());
                                                     method.invoke(o, args);
