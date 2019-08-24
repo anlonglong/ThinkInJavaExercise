@@ -7,5 +7,15 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
+    <style name="LoadingProgressBar">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/two_mode_loading_progress_bar_anim</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">1000</item>
+        <item name="android:minWidth">52dip</item>
+        <item name="android:maxWidth">52dip</item>
+        <item name="android:minHeight">52dip</item>
+        <item name="android:maxHeight">52dip</item>
+        <item name="android:mirrorForRtl">false</item>
+    </style>
 </resources>
